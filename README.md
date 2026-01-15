@@ -40,9 +40,9 @@ You may make pull requests and whatnot, however for any major changes please ope
 Be sure to test any changes before pushing!
 
 # To-Do
-- [] Implement the ability to pick where the file is saved
-- [] Implement a proper settings page
-- [] Allow the user to graphically change the file type / video quality / audio quality, etc.
+- [ ] Implement the ability to pick where the file is saved
+- [ ] Implement a proper settings page
+- [ ] Allow the user to graphically change the file type / video quality / audio quality, etc.
 
 # Authors
 - Lead developer: [@nexusvoyager](https://github.com/nexusvoyager)
