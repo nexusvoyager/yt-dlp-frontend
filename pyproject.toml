@@ -1,26 +1,27 @@
 [project]
 name = "yt-dlp-frontend"
-version = "0.1.0"
-description = ""
+version = "0.0.1"
+description = "yt-dlp-frontend is a cross-platform local video downloader."
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-    { name = "Flet developer", email = "you@example.com" }
+    { name = "Ali Alshamsi", email = "nexusthavoyager@gmail.com" }
 ]
 dependencies = [
-  "flet>=0.80.0"
+    "flet>=0.80.0",
+    "yt-dlp"
 ]
 
 [dependency-groups]
 dev = [
-  "flet[all]>=0.80.0",
+    "flet[all]>=0.80.0",
+    "yt-dlp"
 ]
 
 [tool.flet]
-org = "com.mycompany"
+org = "NexusVoyager"
 product = "yt-dlp-frontend"
-company = "Flet"
-copyright = "Copyright (C) 2026 by Flet"
+company = "Nexusvoyager"
 
 [tool.flet.app]
 path = "src"

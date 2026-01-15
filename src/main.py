@@ -1,5 +1,4 @@
 import flet as ft
-import yt_dlp
 from func.downloadFuncs import downloadAudio, downloadVideo
 
 
@@ -50,7 +49,7 @@ def main(page: ft.Page):
    
    def downloadContent():
        if not urlBar.value:
-           print("url is empty")
+           page.show_dialog(ft.SnackBar(ft.Text("Please paste in a URL")))
            return
     
        
