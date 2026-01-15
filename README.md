@@ -1,61 +1,48 @@
-# YtDlpFrontend app
+# Yt-dlp frontend (Project name pending)
 
-## Run the app
+## Overview
+Before you start flaming me for this awful readme, im not good at writing these, you can contribute if you'd like.
 
-### uv
+**yt-dlp frontend** is a frontend (if that wasn't obvious enough) for **yt-dlp**, developed entirely in Python using **Flet**. It is designed to be easy to use and runs completely locally on your system (so you don't have to worry about your favorite downloading site going under all of a sudden).
 
-Run as a desktop app:
+## Installation:
+🚧 There aren't any ready to use installers for Windows/Mac/Linux, so you're required to build this on your own for now
 
-```
-uv run flet run
-```
+## Getting started (Contribute/Compilation):
 
-Run as a web app:
+### Setup a virtual environment
+Setting a virtual environment up on python is pretty easy, just run the following command to create it
 
-```
-uv run flet run --web
-```
+`python3 -m venv .venv`
 
-For more details on running the app, refer to the [Getting Started Guide](https://docs.flet.dev/).
+To activate the virtual environment just run the following command (platform dependent)
 
-## Build the app
+Windows:
+`.venv\Scripts\activate.bat`
 
-### Android
+Unix:
+`source venv/bin/activate`
 
-```
-flet build apk -v
-```
+### Download the Required Dependencies
+- [Python](https://python.org)
+- [Ffmpeg](https://www.ffmpeg.org/)
+- Flet: `pip install flet[all]`
+- YT-DLP `pip install yt-dlp`
 
-For more details on building and signing `.apk` or `.aab`, refer to the [Android Packaging Guide](https://docs.flet.dev/publish/android/).
+### Build the project:
+Flet thankfully simplified the process so you just have to run 
 
-### iOS
+`flet build (windows/macos/linux)`
 
-```
-flet build ipa -v
-```
+# Contributing
+You may make pull requests and whatnot, however for any major changes please open up an issue first to discuss said changes.
 
-For more details on building and signing `.ipa`, refer to the [iOS Packaging Guide](https://docs.flet.dev/publish/ios/).
+Be sure to test any changes before pushing!
 
-### macOS
+# To-Do
+- [] Implement the ability to pick where the file is saved
+- [] Implement a proper settings page
+- [] Allow the user to graphically change the file type / video quality / audio quality, etc.
 
-```
-flet build macos -v
-```
-
-For more details on building macOS package, refer to the [macOS Packaging Guide](https://docs.flet.dev/publish/macos/).
-
-### Linux
-
-```
-flet build linux -v
-```
-
-For more details on building Linux package, refer to the [Linux Packaging Guide](https://docs.flet.dev/publish/linux/).
-
-### Windows
-
-```
-flet build windows -v
-```
-
-For more details on building Windows package, refer to the [Windows Packaging Guide](https://docs.flet.dev/publish/windows/).
+# Authors
+- Lead developer: [@nexusvoyager](https://github.com/nexusvoyager)
