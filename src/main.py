@@ -49,7 +49,7 @@ def main(page: ft.Page):
    
    def downloadContent():
        if not urlBar.value:
-           page.show_dialog(ft.SnackBar(ft.Text("Please paste in a URL")))
+           print("url is empty")
            return
     
        
