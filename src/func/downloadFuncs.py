@@ -14,6 +14,7 @@ def downloadVideo(videoURL, save_path=f"{homeDirectory}/Downloads/Yt-dlp/Video")
     
     try: 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl: # type: ignore (vs code is being a bitch ignore this please)
+            #reminder, implement a proper way to check for download percentages because for some fucking reason i cant for the life of me implement one.
             ydl.download([videoURL])
         print(f"Successfully downloaded {videoURL}")
     except Exception as e:

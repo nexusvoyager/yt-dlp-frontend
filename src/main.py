@@ -49,8 +49,12 @@ def main(page: ft.Page):
    
    def downloadContent():
        if not urlBar.value:
-           print("url is empty")
+           page.show_dialog(ft.SnackBar(ft.Text("URL is missing")))
            return
+       elif not downloadtypeDropdown.value:
+           page.show_dialog(ft.SnackBar(ft.Text("Please Select download type")))
+           return
+           
     
        
        if downloadtypeDropdown.value == "video":
